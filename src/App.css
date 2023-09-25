@@ -1,0 +1,654 @@
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.linesetter {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.for-mob {
+  display: none;
+}
+
+.dot {
+  height: 35px;
+  width: 35px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 765px) {
+  .flex-direction-sm-column-reverse {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .for-mob {
+    display: block;
+  }
+
+  .for-mob-avatar {
+    height: 3rem !important;
+  }
+
+  .for-mob-gap {
+    gap: 2rem !important;
+  }
+
+  .title > h1 {
+    font-size: 1.2rem;
+  }
+  .for-mob-font {
+    font-size: 0.6rem !important;
+  }
+
+  .for-mob-sort {
+    vertical-align: middle !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    width: 130px !important;
+  }
+
+  .for-mob-font-above-footer {
+    font-size: 1rem !important;
+  }
+  .for-mob-font-above-footer-btn {
+    font-size: 0.8rem !important;
+  }
+
+  .isMobCntr {
+    text-align: center !important;
+  }
+
+  .img-handle {
+    width: auto !important;
+  }
+
+  .imgMob {
+    width: 50% !important;
+    height: 8rem !important;
+  }
+
+  .for-mob-chats {
+    display: none;
+  }
+  .for-mob-log {
+    display: inline-block !important;
+  }
+
+  .for-mob-nav {
+    display: none;
+  }
+
+  .for-mob-homeCard {
+    height: 20rem !important;
+    font-size: smaller !important;
+  }
+
+  .for-mob-cardBody {
+    height: 63% !important;
+  }
+
+  .for-mob-like {
+    top: 18px !important;
+    right: 11px !important;
+  }
+  .for-mob-cardTitle {
+    font-size: 12px;
+  }
+  .for-mob-location {
+    position: relative !important;
+    bottom: 2px;
+    font-size: smaller;
+  }
+}
+
+.h-55 {
+  height: 55% !important  ;
+}
+
+@media (max-width: 991.98px) {
+  .imgTab {
+    width: 75% !important;
+    height: 10rem !important;
+  }
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-95 {
+  width: 95% !important;
+}
+
+.text-dark {
+  color: #3d4152 !important;
+}
+
+.btn-close {
+  margin: 0px !important;
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 9999;
+  display: block;
+}
+
+.selected {
+  border: 2px solid black !important;
+}
+
+.cardHome {
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in,
+    box-shadow 0.3s ease-in-out;
+}
+
+.cardHome:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* subject width */
+.slick-slide {
+  margin-right: 0.5rem;
+}
+
+/* //add media query for subject width on 575 px */
+@media (max-width: 576px) {
+  .slick-slide {
+    margin-right: 0rem;
+  }
+}
+
+/* //add media query for subject width on 575 px */
+@media (max-width: 768px) {
+  .on-mob-width {
+    width: -webkit-fill-available !important;
+  }
+}
+
+/* //add a media for min 320 max 480 px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  /* .mob-border {
+    border-radius: 6px !important;
+    border-bottom-left-radius: 0px !important;
+  } */
+  .no-wrap-onMob {
+    /* flex-wrap: nowrap !important;
+    overflow: hidden !important; */
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    height: auto !important;
+  }
+
+  .mob-card-img {
+    /* object-fit: inherit !important; */
+    height: 100% !important;
+    margin-left: 4px !important;
+    margin-top: 2px !important;
+  }
+
+  .card-footer {
+    margin-top: 4px !important;
+  }
+
+  .breadcrumb li {
+    font-size: 0.8rem !important;
+  }
+
+  .mob-font {
+    font-size: 0.8rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    overflow: -moz-hidden-unscrollable !important;
+    text-overflow: ellipsis !important;
+    /* height: auto !important; */
+  }
+
+  .mob-footer-img {
+    width: 4em !important;
+    height: 4em !important;
+  }
+
+  .mob-full-screen-res {
+    width: 95% !important;
+  }
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+}
+
+.yellow-circle {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  top: 30%;
+  margin: auto;
+}
+
+.slide-up {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.bubble {
+  background-color: #f1f0f0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 80%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+/* body {
+    font-family: 'Rubik', sans-serif;
+    height: 100% !important;
+    background-color: #F8F9FB !important;
+} */
+
+/* .container-fluid {
+    margin-top: 101px;
+    color: #000 !important;
+} */
+
+/* .card {
+    background-color: #F8F9FB !important;
+} */
+
+.social {
+  font-size: 21px !important;
+}
+
+.color-text {
+  color: #757575 !important;
+}
+
+footer {
+  color: #caced1 !important;
+}
+
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Careers {
+  cursor: pointer;
+  color: #1e88e5;
+}
+
+.row-1 {
+  background-color: #1e242a !important;
+}
+
+.row-2 {
+  background-color: #28323c !important;
+}
+
+.hover-change:hover {
+  border-color: #5271fd;
+  color: white;
+  background-color: #5271fd;
+}
+
+.hover-change:not(:hover) {
+  border-color: #5271fd;
+  color: #5271fd;
+}
+
+/* .red {
+  background-color: #f43f5e;
+}
+
+.blue {
+  background-color: #3b82f6;
+}
+
+.green {
+  background-color: #22c55e;
+} */
+
+.scroll-snap-card {
+  height: 150px;
+  /* width: 250px; */
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.scroll-snap-card .slide {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-snap-card .slide p {
+  font-size: 1em;
+  color: white;
+  font-weight: 700;
+}
+
+.slide-left {
+  animation: slide-left 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* .scroll{
+  overflow-x: scroll;
+  height: 100%;
+  -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;  
+} */
+
+.filter {
+  filter: brightness(0);
+}
+
+@import "bootstrap";
+.btn-primary {
+  background-color: #5271ff !important;
+  border-color: #5271ff !important;
+}
+
+/* //create a hover effect for the button and background color should be a little lighter */
+.btn-primary:hover {
+  background-color: #3f5efb !important;
+  border-color: #3f5efb !important;
+}
+
+.text-primary {
+  color: #5271ff !important;
+}
+
+.my-placeholder::placeholder {
+  color: #999; /* Adjust the color as needed */
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+.btn-outline-post {
+  color: #5271ff !important;
+  border-color: #5271ff !important;
+}
+
+.card-btn {
+  background-color: #f1eeff !important;
+  color: #6558d3 !important;
+  border: 1px solid #a69fd6 !important;
+}
+
+/* //on hover the color should be a little lighter */
+.btn-outline-post:hover {
+  color: #3f5efb !important;
+  border-color: #3f5efb !important;
+  background-color: #3f5efb !important;
+  color: white !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: rgb(25, 135, 84) !important;
+  border-color: rgb(25, 135, 84) !important;
+  border-radius: 50% !important;
+}
+
+.react-datepicker__day:hover {
+  /* background-color: rgb(25, 135, 84) !important;
+  border-color:  rgb(25, 135, 84) !important; */
+  border-radius: 50% !important;
+}
+
+.react-datepicker__header {
+  background-color: #fff !important;
+  border-bottom: 0px !important;
+}
+
+.react-datepicker__current-month {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
+
+.pointer {
+  cursor: pointer;
+  border-radius: 0.375rem 0px 0px 0.375rem;
+}
+
+.react-datepicker__triangle {
+  display: none !important;
+}
+
+.react-datepicker__month-container {
+  float: left;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.bg-secondary {
+  background-color: #f1eeff !important;
+  color: #6558d3 !important;
+  /* border: 1px solid #a69fd6 !important; */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: 9999;
+  display: block;
+}
+
+.gradient {
+  background: rgb(13, 11, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 11, 47, 1) 0%,
+    rgba(82, 113, 255, 1) 100%
+  );
+  /* height: 100px; */
+}
+
+.gradient2 {
+  background: rgb(13, 11, 47);
+  background: linear-gradient(170deg, rgb(4 0 65) 0%, rgb(113 128 199) 100%);
+  /* height: 100px; */
+}
+
+.search-result:hover {
+  background-color: #f2f2f3 !important;
+  /* color: #6558d3 !important; */
+}
+
+.highlighted-text {
+  background-color: yellow; /* Change to your desired highlight color */
+  font-weight: bold; /* Add bold styling to the highlighted text */
+}
+
+/* //target href inside breadcrumb-item class */
+.breadcrumb-item a {
+  color: #6c757d !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb {
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  text-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.breadcrumb li {
+  /* white-space: nowrap !important; */
+  /* text-wrap: nowrap !important; */
+  /* width: 100% !important; */
+}
+
+/* //hover effect on breadcrumb-item */
+.breadcrumb-item a:hover {
+  color: #3d4152 !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb-item.active {
+  color: #3d4152 !important;
+}
+
+.breadcrumbContainer .breadcrumb .breadcrumb-item::before {
+  content: " > ";
+}
+
+/* Optional: If you want to remove the separator before the first item */
+.breadcrumbContainer .breadcrumb .breadcrumb-item:first-child::before {
+  content: none;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+#react-select-3-listbox {
+  z-index: 9999 !important;
+
+  /* //if height is more than 200px then scroll */
+  height: 200px !important;
+  overflow-y: scroll !important;
+
+  /* //if height is less than 200px then no scroll */
+  height: auto !important;
+  overflow-y: hidden !important;
+
+  /* //if height is more than 200px then scroll */
+
+  /* //if height is less than 200px then no scroll */
+  height: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* .was-validated .form-control:valid, .form-control.is-valid , .form-control.is-invalid ,.was-invalidated {
+  background-image: none !important;
+  border-color: #ced4da !important;
+} */
+
+/* //set the border to 1px solid #ced4da on hover,focus,active */
+.form-control:focus {
+  border: 1px 0px solid #ced4da !important;
+  box-shadow: none !important;
+
+  /* border-color:none !important; */
+}
+
+.red:focus {
+  border-color: #dc3545 !important;
+  border-end-end-radius: 0px;
+}
+.green:focus {
+  border-color: #198754 !important;
+  border-end-end-radius: 0px;
+}
+
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #5976fd;
+}
+
+/* //remove the navbar height from vh-100 */
+.vhh-100 {
+  height: calc(100vh - 72px) !important;
+}
+
+.bTop {
+  border-top: 2px solid grey !important;
+  width: 75%;
+  transition: width 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.Link:hover .bTop {
+  width: 100% !important;
+  border-color: #5271ff !important;
+  transition: width 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.Feed {
+  background-color: rgb(250, 250, 250) !important;
+}
